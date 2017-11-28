@@ -13,6 +13,8 @@
 		632433921FCD4CD600A3BC1A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 632433901FCD4CD600A3BC1A /* LaunchScreen.storyboard */; };
 		6324339D1FCD4D1800A3BC1A /* VcHome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6324339B1FCD4D1800A3BC1A /* VcHome.swift */; };
 		6324339E1FCD4D1800A3BC1A /* VcHome.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6324339C1FCD4D1800A3BC1A /* VcHome.xib */; };
+		632433A91FCD5F2600A3BC1A /* VcIntro.swift in Sources */ = {isa = PBXBuildFile; fileRef = 632433A71FCD5F2600A3BC1A /* VcIntro.swift */; };
+		632433AA1FCD5F2600A3BC1A /* VcIntro.xib in Resources */ = {isa = PBXBuildFile; fileRef = 632433A81FCD5F2600A3BC1A /* VcIntro.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		632433931FCD4CD600A3BC1A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6324339B1FCD4D1800A3BC1A /* VcHome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VcHome.swift; sourceTree = "<group>"; };
 		6324339C1FCD4D1800A3BC1A /* VcHome.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VcHome.xib; sourceTree = "<group>"; };
+		632433A71FCD5F2600A3BC1A /* VcIntro.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VcIntro.swift; sourceTree = "<group>"; };
+		632433A81FCD5F2600A3BC1A /* VcIntro.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VcIntro.xib; sourceTree = "<group>"; };
 		B64C12CA93E8BA38165F536A /* Pods-ownself.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ownself.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ownself/Pods-ownself.debug.xcconfig"; sourceTree = "<group>"; };
 		C3300479C255B1DC91E8ED06 /* Pods_ownself.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ownself.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -61,6 +65,7 @@
 		632433861FCD4CD600A3BC1A /* ownself */ = {
 			isa = PBXGroup;
 			children = (
+				632433A51FCD5F0F00A3BC1A /* Intro */,
 				632433991FCD4CF600A3BC1A /* Home */,
 				632433871FCD4CD600A3BC1A /* AppDelegate.swift */,
 				6324338E1FCD4CD600A3BC1A /* Assets.xcassets */,
@@ -83,6 +88,23 @@
 			children = (
 				6324339B1FCD4D1800A3BC1A /* VcHome.swift */,
 				6324339C1FCD4D1800A3BC1A /* VcHome.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		632433A51FCD5F0F00A3BC1A /* Intro */ = {
+			isa = PBXGroup;
+			children = (
+				632433A61FCD5F1900A3BC1A /* View */,
+			);
+			path = Intro;
+			sourceTree = "<group>";
+		};
+		632433A61FCD5F1900A3BC1A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				632433A71FCD5F2600A3BC1A /* VcIntro.swift */,
+				632433A81FCD5F2600A3BC1A /* VcIntro.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -167,6 +189,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				632433921FCD4CD600A3BC1A /* LaunchScreen.storyboard in Resources */,
+				632433AA1FCD5F2600A3BC1A /* VcIntro.xib in Resources */,
 				6324339E1FCD4D1800A3BC1A /* VcHome.xib in Resources */,
 				6324338F1FCD4CD600A3BC1A /* Assets.xcassets in Resources */,
 			);
@@ -237,6 +260,7 @@
 			files = (
 				632433881FCD4CD600A3BC1A /* AppDelegate.swift in Sources */,
 				6324339D1FCD4D1800A3BC1A /* VcHome.swift in Sources */,
+				632433A91FCD5F2600A3BC1A /* VcIntro.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
