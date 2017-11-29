@@ -9,27 +9,28 @@
 import UIKit
 
 class VcIntro: UIViewController {
-
+        
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        self.navigationController?.isNavigationBarHidden = true
+        
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    //MARK: ## Button Method ##
+    @IBAction func btnSignUpB(_ sender: UIButton) { // sign up
+        
     }
-    */
-
+    
+    @IBAction func btnSignInB(_ sender: UIButton) { // sign in
+        
+    }
+    
+    @IBAction func btnNonSignB(_ sender: UIButton) { // signIn by non-Member
+        
+    }
+    
 }
