@@ -7,13 +7,13 @@ ownself by iOS
 1.	XCode install. your mac
 2.	Repositories clone, clone it where you want directory.
 	```ruby
-		//Your Terminal
-        -> cd Desktop/
-        -> git clone https://github.com/D-Study/own-iOS.git
+	//Your Terminal
+    -> cd Desktop/
+    -> git clone https://github.com/D-Study/own-iOS.git
 	```
 3.	move clone directory on terminal
 	```ruby
-		-> pod install
+	-> pod install
     ```
 4.	open the project! open file 'xxx.xcworkspace'.
 	if you open 'xxx.xcodeproj', you will encounter errors...
