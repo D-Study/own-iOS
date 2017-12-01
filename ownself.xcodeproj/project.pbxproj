@@ -16,6 +16,11 @@
 		632433A91FCD5F2600A3BC1A /* VcIntro.swift in Sources */ = {isa = PBXBuildFile; fileRef = 632433A71FCD5F2600A3BC1A /* VcIntro.swift */; };
 		632433AA1FCD5F2600A3BC1A /* VcIntro.xib in Resources */ = {isa = PBXBuildFile; fileRef = 632433A81FCD5F2600A3BC1A /* VcIntro.xib */; };
 		636C6F5C1FCE4823009CD1FA /* SCExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 636C6F5B1FCE4823009CD1FA /* SCExtension.swift */; };
+		636C6F641FCE9ED2009CD1FA /* VcSignUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 636C6F621FCE9ED2009CD1FA /* VcSignUp.swift */; };
+		636C6F651FCE9ED2009CD1FA /* VcSignUp.xib in Resources */ = {isa = PBXBuildFile; fileRef = 636C6F631FCE9ED2009CD1FA /* VcSignUp.xib */; };
+		636C6F681FCE9EE7009CD1FA /* VcSignIn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 636C6F661FCE9EE7009CD1FA /* VcSignIn.swift */; };
+		636C6F691FCE9EE8009CD1FA /* VcSignIn.xib in Resources */ = {isa = PBXBuildFile; fileRef = 636C6F671FCE9EE7009CD1FA /* VcSignIn.xib */; };
+		63E632A71FD114BA0077C625 /* Toast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E632A61FD114B90077C625 /* Toast.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +35,11 @@
 		632433A71FCD5F2600A3BC1A /* VcIntro.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VcIntro.swift; sourceTree = "<group>"; };
 		632433A81FCD5F2600A3BC1A /* VcIntro.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VcIntro.xib; sourceTree = "<group>"; };
 		636C6F5B1FCE4823009CD1FA /* SCExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCExtension.swift; sourceTree = "<group>"; };
+		636C6F621FCE9ED2009CD1FA /* VcSignUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VcSignUp.swift; sourceTree = "<group>"; };
+		636C6F631FCE9ED2009CD1FA /* VcSignUp.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VcSignUp.xib; sourceTree = "<group>"; };
+		636C6F661FCE9EE7009CD1FA /* VcSignIn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VcSignIn.swift; sourceTree = "<group>"; };
+		636C6F671FCE9EE7009CD1FA /* VcSignIn.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VcSignIn.xib; sourceTree = "<group>"; };
+		63E632A61FD114B90077C625 /* Toast.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Toast.swift; sourceTree = "<group>"; };
 		B64C12CA93E8BA38165F536A /* Pods-ownself.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ownself.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ownself/Pods-ownself.debug.xcconfig"; sourceTree = "<group>"; };
 		C3300479C255B1DC91E8ED06 /* Pods_ownself.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ownself.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -67,8 +77,10 @@
 		632433861FCD4CD600A3BC1A /* ownself */ = {
 			isa = PBXGroup;
 			children = (
+				63E632A51FD114A70077C625 /* Library */,
 				636C6F5A1FCE47FE009CD1FA /* SCExtension */,
 				632433A51FCD5F0F00A3BC1A /* Intro */,
+				636C6F5E1FCE9EA8009CD1FA /* Sign */,
 				632433991FCD4CF600A3BC1A /* Home */,
 				632433871FCD4CD600A3BC1A /* AppDelegate.swift */,
 				6324338E1FCD4CD600A3BC1A /* Assets.xcassets */,
@@ -118,6 +130,65 @@
 				636C6F5B1FCE4823009CD1FA /* SCExtension.swift */,
 			);
 			path = SCExtension;
+			sourceTree = "<group>";
+		};
+		636C6F5E1FCE9EA8009CD1FA /* Sign */ = {
+			isa = PBXGroup;
+			children = (
+				63E632A81FD12E800077C625 /* Modal */,
+				636C6F5F1FCE9EB3009CD1FA /* View */,
+				63E632A91FD12E860077C625 /* Controller */,
+			);
+			path = Sign;
+			sourceTree = "<group>";
+		};
+		636C6F5F1FCE9EB3009CD1FA /* View */ = {
+			isa = PBXGroup;
+			children = (
+				636C6F611FCE9EBC009CD1FA /* SignIn */,
+				636C6F601FCE9EB7009CD1FA /* SignUp */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		636C6F601FCE9EB7009CD1FA /* SignUp */ = {
+			isa = PBXGroup;
+			children = (
+				636C6F621FCE9ED2009CD1FA /* VcSignUp.swift */,
+				636C6F631FCE9ED2009CD1FA /* VcSignUp.xib */,
+			);
+			path = SignUp;
+			sourceTree = "<group>";
+		};
+		636C6F611FCE9EBC009CD1FA /* SignIn */ = {
+			isa = PBXGroup;
+			children = (
+				636C6F661FCE9EE7009CD1FA /* VcSignIn.swift */,
+				636C6F671FCE9EE7009CD1FA /* VcSignIn.xib */,
+			);
+			path = SignIn;
+			sourceTree = "<group>";
+		};
+		63E632A51FD114A70077C625 /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				63E632A61FD114B90077C625 /* Toast.swift */,
+			);
+			path = Library;
+			sourceTree = "<group>";
+		};
+		63E632A81FD12E800077C625 /* Modal */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Modal;
+			sourceTree = "<group>";
+		};
+		63E632A91FD12E860077C625 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 		771B1F28EE9C6AC64FE87DB6 /* Frameworks */ = {
@@ -199,8 +270,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				636C6F691FCE9EE8009CD1FA /* VcSignIn.xib in Resources */,
 				632433921FCD4CD600A3BC1A /* LaunchScreen.storyboard in Resources */,
 				632433AA1FCD5F2600A3BC1A /* VcIntro.xib in Resources */,
+				636C6F651FCE9ED2009CD1FA /* VcSignUp.xib in Resources */,
 				6324339E1FCD4D1800A3BC1A /* VcHome.xib in Resources */,
 				6324338F1FCD4CD600A3BC1A /* Assets.xcassets in Resources */,
 			);
@@ -271,8 +344,11 @@
 			files = (
 				632433881FCD4CD600A3BC1A /* AppDelegate.swift in Sources */,
 				6324339D1FCD4D1800A3BC1A /* VcHome.swift in Sources */,
+				636C6F641FCE9ED2009CD1FA /* VcSignUp.swift in Sources */,
 				632433A91FCD5F2600A3BC1A /* VcIntro.swift in Sources */,
+				636C6F681FCE9EE7009CD1FA /* VcSignIn.swift in Sources */,
 				636C6F5C1FCE4823009CD1FA /* SCExtension.swift in Sources */,
+				63E632A71FD114BA0077C625 /* Toast.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

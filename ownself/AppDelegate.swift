@@ -15,9 +15,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         
-        initDefalutOption()
-        
-        
+        initDefalutOption()       
+                
         let navigat = UINavigationController()
         if let sign: String = defaults.object(forKey: "isSign") as? String, sign == "no" {
             navigat.pushViewController(VcIntro(), animated: false)
