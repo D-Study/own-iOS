@@ -18,6 +18,9 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="VcSignIn" customModule="ownself" customModuleProvider="target">
             <connections>
+                <outlet property="btnStartOwnSelf" destination="vPn-lQ-fi5" id="70K-iR-VCU"/>
+                <outlet property="lbDesStatus" destination="a8X-dt-guq" id="Nd2-xy-073"/>
+                <outlet property="tfEmail" destination="mns-lJ-w3x" id="S97-jW-1ha"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -47,7 +50,10 @@
                     </constraints>
                     <nil key="textColor"/>
                     <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
-                    <textInputTraits key="textInputTraits" autocorrectionType="no"/>
+                    <textInputTraits key="textInputTraits" autocorrectionType="no" keyboardType="emailAddress"/>
+                    <connections>
+                        <action selector="tfEmailT:" destination="-1" eventType="editingChanged" id="t1z-P0-jPu"/>
+                    </connections>
                 </textField>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a8X-dt-guq">
                     <rect key="frame" x="30" y="264" width="315" height="20"/>
@@ -68,6 +74,9 @@
                     <state key="normal" title="시작하기">
                         <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </state>
+                    <connections>
+                        <action selector="btnStartOwnSelfB:" destination="-1" eventType="touchUpInside" id="bwg-FW-h29"/>
+                    </connections>
                 </button>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -85,7 +94,7 @@
                 <constraint firstItem="a8X-dt-guq" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="30" id="rfh-5G-Zod"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
-            <point key="canvasLocation" x="-141" y="-20"/>
+            <point key="canvasLocation" x="-957" y="-69"/>
         </view>
     </objects>
 </document>

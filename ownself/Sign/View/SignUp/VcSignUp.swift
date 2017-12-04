@@ -48,14 +48,14 @@ class VcSignUp: UIViewController {
     
     @IBAction func btnSignUPB(_ sender: UIButton) { // signUp Button
         view.endEditing(true)
-        printa("here")
+        
         guard let email: String = tfEmail.text, email.count != 0 else {
             Toast(message: "올바른 이메일인지 확인해주세요.").show()
             tfEmail.becomeFirstResponder()
             return
         }
         // need Server communication
-        
+        self.present(VcRetrospect(), animated: true, completion: nil)
     }
     
     //MARK: ## TextField Method ##
