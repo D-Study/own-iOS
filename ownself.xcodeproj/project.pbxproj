@@ -20,6 +20,8 @@
 		636C6F651FCE9ED2009CD1FA /* VcSignUp.xib in Resources */ = {isa = PBXBuildFile; fileRef = 636C6F631FCE9ED2009CD1FA /* VcSignUp.xib */; };
 		636C6F681FCE9EE7009CD1FA /* VcSignIn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 636C6F661FCE9EE7009CD1FA /* VcSignIn.swift */; };
 		636C6F691FCE9EE8009CD1FA /* VcSignIn.xib in Resources */ = {isa = PBXBuildFile; fileRef = 636C6F671FCE9EE7009CD1FA /* VcSignIn.xib */; };
+		63BF05351FD68CD100BA7ED2 /* VcSetting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63BF05331FD68CD100BA7ED2 /* VcSetting.swift */; };
+		63BF05361FD68CD100BA7ED2 /* VcSetting.xib in Resources */ = {isa = PBXBuildFile; fileRef = 63BF05341FD68CD100BA7ED2 /* VcSetting.xib */; };
 		63E632A71FD114BA0077C625 /* Toast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E632A61FD114B90077C625 /* Toast.swift */; };
 		63FAFFAA1FD4F3EB00C781A3 /* VcRetrospect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63FAFFA81FD4F3EB00C781A3 /* VcRetrospect.swift */; };
 		63FAFFAB1FD4F3EB00C781A3 /* VcRetrospect.xib in Resources */ = {isa = PBXBuildFile; fileRef = 63FAFFA91FD4F3EB00C781A3 /* VcRetrospect.xib */; };
@@ -41,6 +43,8 @@
 		636C6F631FCE9ED2009CD1FA /* VcSignUp.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VcSignUp.xib; sourceTree = "<group>"; };
 		636C6F661FCE9EE7009CD1FA /* VcSignIn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VcSignIn.swift; sourceTree = "<group>"; };
 		636C6F671FCE9EE7009CD1FA /* VcSignIn.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VcSignIn.xib; sourceTree = "<group>"; };
+		63BF05331FD68CD100BA7ED2 /* VcSetting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VcSetting.swift; sourceTree = "<group>"; };
+		63BF05341FD68CD100BA7ED2 /* VcSetting.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VcSetting.xib; sourceTree = "<group>"; };
 		63E632A61FD114B90077C625 /* Toast.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Toast.swift; sourceTree = "<group>"; };
 		63FAFFA81FD4F3EB00C781A3 /* VcRetrospect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VcRetrospect.swift; sourceTree = "<group>"; };
 		63FAFFA91FD4F3EB00C781A3 /* VcRetrospect.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VcRetrospect.xib; sourceTree = "<group>"; };
@@ -85,6 +89,7 @@
 				636C6F5A1FCE47FE009CD1FA /* SCExtension */,
 				632433A51FCD5F0F00A3BC1A /* Intro */,
 				636C6F5E1FCE9EA8009CD1FA /* Sign */,
+				63BF05301FD68C9B00BA7ED2 /* Setting */,
 				632433991FCD4CF600A3BC1A /* Home */,
 				632433871FCD4CD600A3BC1A /* AppDelegate.swift */,
 				6324338E1FCD4CD600A3BC1A /* Assets.xcassets */,
@@ -172,6 +177,31 @@
 				636C6F671FCE9EE7009CD1FA /* VcSignIn.xib */,
 			);
 			path = SignIn;
+			sourceTree = "<group>";
+		};
+		63BF05301FD68C9B00BA7ED2 /* Setting */ = {
+			isa = PBXGroup;
+			children = (
+				63BF05311FD68CA300BA7ED2 /* View */,
+			);
+			path = Setting;
+			sourceTree = "<group>";
+		};
+		63BF05311FD68CA300BA7ED2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				63BF05321FD68CB100BA7ED2 /* ViewSetting */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		63BF05321FD68CB100BA7ED2 /* ViewSetting */ = {
+			isa = PBXGroup;
+			children = (
+				63BF05331FD68CD100BA7ED2 /* VcSetting.swift */,
+				63BF05341FD68CD100BA7ED2 /* VcSetting.xib */,
+			);
+			path = ViewSetting;
 			sourceTree = "<group>";
 		};
 		63E632A51FD114A70077C625 /* Library */ = {
@@ -289,6 +319,7 @@
 				632433921FCD4CD600A3BC1A /* LaunchScreen.storyboard in Resources */,
 				632433AA1FCD5F2600A3BC1A /* VcIntro.xib in Resources */,
 				636C6F651FCE9ED2009CD1FA /* VcSignUp.xib in Resources */,
+				63BF05361FD68CD100BA7ED2 /* VcSetting.xib in Resources */,
 				6324339E1FCD4D1800A3BC1A /* VcHome.xib in Resources */,
 				6324338F1FCD4CD600A3BC1A /* Assets.xcassets in Resources */,
 			);
@@ -362,6 +393,7 @@
 				632433881FCD4CD600A3BC1A /* AppDelegate.swift in Sources */,
 				63FAFFAA1FD4F3EB00C781A3 /* VcRetrospect.swift in Sources */,
 				6324339D1FCD4D1800A3BC1A /* VcHome.swift in Sources */,
+				63BF05351FD68CD100BA7ED2 /* VcSetting.swift in Sources */,
 				636C6F641FCE9ED2009CD1FA /* VcSignUp.swift in Sources */,
 				632433A91FCD5F2600A3BC1A /* VcIntro.swift in Sources */,
 				636C6F681FCE9EE7009CD1FA /* VcSignIn.swift in Sources */,

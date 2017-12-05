@@ -1,14 +1,14 @@
 //
-//  VcHome.swift
+//  VcSetting.swift
 //  ownself
 //
-//  Created by maccli1 on 2017. 11. 28..
+//  Created by maccli1 on 2017. 12. 5..
 //  Copyright © 2017년 myoung. All rights reserved.
 //
 
 import UIKit
 
-class VcHome: UIViewController {
+class VcSetting: UIViewController {
 
     @IBOutlet weak var contNaviHeight: NSLayoutConstraint!
     
@@ -18,30 +18,27 @@ class VcHome: UIViewController {
     }
 
     override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
+        super.didReceiveMemoryWarning()        
     }
     
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
-        initAutoLayout()
+        initAutolayout()
     }
     
     //MARK: ## init method ##
-    func initNormal() { // init normal setting
-        
-        self.navigationController?.isNavigationBarHidden = true
-        UIApplication.shared.isStatusBarHidden = false
-        
+    func initNormal() { //init normal setting
     }
     
-    func initAutoLayout() { //init autolayout
+    func initAutolayout() { //init autolayout setting
         if deviceType == "x" {
             contNaviHeight.constant = 94.0
         }
-    }
+    }    
     
     //MARK: ## button method ##
-    @IBAction func btnSettingB(_ sender: UIButton) { // Go to the setting page
-        self.navigationController?.pushViewController(VcSetting(), animated: true)
+    @IBAction func btnBackB(_ sender: UIButton) { //Back to the Home Page
+        self.navigationController?.popViewController(animated: true)
     }
+    
 }

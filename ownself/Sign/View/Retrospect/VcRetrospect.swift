@@ -44,7 +44,6 @@ class VcRetrospect: UIViewController {
         dateFormat.dateFormat = "hhmmss"
         printa(dateFormat.string(from: dtRetrospect.date))
     }
-    
 }
 
 //MARK: UIScrollView Delegate

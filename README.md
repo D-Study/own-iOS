@@ -21,8 +21,9 @@ ownself by iOS
 
 ## Todo
 - [x] create project and git repositories.
-- [ ] make intro and sign
+- [x] make intro and sign
 - [ ] make home view
+- [ ] make setting view
 
 Notes
 - I have not applied the design yet.
