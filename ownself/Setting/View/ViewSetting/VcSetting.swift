@@ -34,7 +34,7 @@ class VcSetting: UIViewController {
         if deviceType == "x" {
             contNaviHeight.constant = 94.0
         }
-    }    
+    }
     
     //MARK: ## button method ##
     @IBAction func btnBackB(_ sender: UIButton) { //Back to the Home Page
