@@ -21,6 +21,7 @@
                 <outlet property="btnStartOwnSelf" destination="vPn-lQ-fi5" id="70K-iR-VCU"/>
                 <outlet property="lbDesStatus" destination="a8X-dt-guq" id="Nd2-xy-073"/>
                 <outlet property="tfEmail" destination="mns-lJ-w3x" id="S97-jW-1ha"/>
+                <outlet property="tfPassword" destination="RAb-Un-cuB" id="Hgt-QY-9rr"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -43,22 +44,22 @@
                         <action selector="btnBackB:" destination="-1" eventType="touchUpInside" id="5jn-sH-qrz"/>
                     </connections>
                 </button>
-                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mns-lJ-w3x">
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Input Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mns-lJ-w3x">
                     <rect key="frame" x="30" y="228.5" width="315" height="30"/>
                     <constraints>
-                        <constraint firstAttribute="height" constant="30" id="RHS-fw-KC9"/>
+                        <constraint firstAttribute="height" constant="30" id="Cw7-wJ-RQ9"/>
                     </constraints>
                     <nil key="textColor"/>
                     <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
-                    <textInputTraits key="textInputTraits" autocorrectionType="no" keyboardType="emailAddress"/>
+                    <textInputTraits key="textInputTraits" autocorrectionType="no" keyboardType="emailAddress" textContentType="email"/>
                     <connections>
                         <action selector="tfEmailT:" destination="-1" eventType="editingChanged" id="t1z-P0-jPu"/>
                     </connections>
                 </textField>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a8X-dt-guq">
-                    <rect key="frame" x="30" y="264" width="315" height="20"/>
+                    <rect key="frame" x="30" y="304" width="315" height="20"/>
                     <constraints>
-                        <constraint firstAttribute="height" constant="20" id="gjW-sJ-Qjm"/>
+                        <constraint firstAttribute="height" constant="20" id="0uP-7W-nNb"/>
                     </constraints>
                     <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
                     <color key="textColor" red="0.87843137250000003" green="0.23921568630000001" blue="0.19215686269999999" alpha="1" colorSpace="calibratedRGB"/>
@@ -78,23 +79,39 @@
                         <action selector="btnStartOwnSelfB:" destination="-1" eventType="touchUpInside" id="bwg-FW-h29"/>
                     </connections>
                 </button>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Input Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="RAb-Un-cuB">
+                    <rect key="frame" x="30" y="269" width="315" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="HIf-Fw-xoP"/>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="sOp-Fp-Jge"/>
+                    </constraints>
+                    <nil key="textColor"/>
+                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                    <textInputTraits key="textInputTraits" autocorrectionType="no" keyboardType="emailAddress" textContentType="password"/>
+                    <connections>
+                        <action selector="tfPasswordT:" destination="-1" eventType="editingChanged" id="vOA-Ou-vgp"/>
+                    </connections>
+                </textField>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
                 <constraint firstItem="fRt-ie-QaO" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="01X-KZ-tfo"/>
-                <constraint firstItem="mns-lJ-w3x" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="30" id="CX9-OK-Ntu"/>
-                <constraint firstItem="a8X-dt-guq" firstAttribute="top" secondItem="mns-lJ-w3x" secondAttribute="bottom" constant="5" id="Fxh-II-Ir0"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="mns-lJ-w3x" secondAttribute="trailing" constant="30" id="0pU-Gp-6po"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="a8X-dt-guq" secondAttribute="trailing" constant="30" id="264-TS-RNp"/>
+                <constraint firstItem="a8X-dt-guq" firstAttribute="top" secondItem="RAb-Un-cuB" secondAttribute="bottom" constant="5" id="CBH-M2-P6X"/>
+                <constraint firstItem="RAb-Un-cuB" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="30" id="S4k-3z-hOd"/>
                 <constraint firstItem="vPn-lQ-fi5" firstAttribute="centerY" secondItem="fnl-2z-Ty3" secondAttribute="centerY" constant="50" id="Wba-XQ-kUK"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="vPn-lQ-fi5" secondAttribute="trailing" constant="30" id="bKu-Vx-hjM"/>
                 <constraint firstItem="vPn-lQ-fi5" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="30" id="cqw-xL-P81"/>
                 <constraint firstItem="fRt-ie-QaO" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="gYC-9k-kmR"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="a8X-dt-guq" secondAttribute="trailing" constant="30" id="lfx-SH-Bty"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="mns-lJ-w3x" secondAttribute="trailing" constant="30" id="pfW-zC-f25"/>
-                <constraint firstItem="mns-lJ-w3x" firstAttribute="centerY" secondItem="fnl-2z-Ty3" secondAttribute="centerY" constant="-100" id="pho-qs-tG1"/>
-                <constraint firstItem="a8X-dt-guq" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="30" id="rfh-5G-Zod"/>
+                <constraint firstItem="mns-lJ-w3x" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="30" id="jfg-6G-Ku9"/>
+                <constraint firstItem="RAb-Un-cuB" firstAttribute="top" secondItem="mns-lJ-w3x" secondAttribute="bottom" constant="10" id="lZy-XZ-B31"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="RAb-Un-cuB" secondAttribute="trailing" constant="30" id="mdF-Fr-M8d"/>
+                <constraint firstItem="mns-lJ-w3x" firstAttribute="centerY" secondItem="fnl-2z-Ty3" secondAttribute="centerY" constant="-100" id="o4r-Ic-bF2"/>
+                <constraint firstItem="a8X-dt-guq" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="30" id="uQi-T1-7WG"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
-            <point key="canvasLocation" x="-957" y="-69"/>
+            <point key="canvasLocation" x="-1134" y="-92"/>
         </view>
     </objects>
 </document>

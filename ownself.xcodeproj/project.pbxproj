@@ -15,6 +15,8 @@
 		6324339E1FCD4D1800A3BC1A /* VcHome.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6324339C1FCD4D1800A3BC1A /* VcHome.xib */; };
 		632433A91FCD5F2600A3BC1A /* VcIntro.swift in Sources */ = {isa = PBXBuildFile; fileRef = 632433A71FCD5F2600A3BC1A /* VcIntro.swift */; };
 		632433AA1FCD5F2600A3BC1A /* VcIntro.xib in Resources */ = {isa = PBXBuildFile; fileRef = 632433A81FCD5F2600A3BC1A /* VcIntro.xib */; };
+		6328F5B01FD9187300CF717A /* VcSetRetrospectTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6328F5AE1FD9187300CF717A /* VcSetRetrospectTime.swift */; };
+		6328F5B11FD9187300CF717A /* VcSetRetrospectTime.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6328F5AF1FD9187300CF717A /* VcSetRetrospectTime.xib */; };
 		636C6F5C1FCE4823009CD1FA /* SCExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 636C6F5B1FCE4823009CD1FA /* SCExtension.swift */; };
 		636C6F641FCE9ED2009CD1FA /* VcSignUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 636C6F621FCE9ED2009CD1FA /* VcSignUp.swift */; };
 		636C6F651FCE9ED2009CD1FA /* VcSignUp.xib in Resources */ = {isa = PBXBuildFile; fileRef = 636C6F631FCE9ED2009CD1FA /* VcSignUp.xib */; };
@@ -24,6 +26,8 @@
 		63BF05361FD68CD100BA7ED2 /* VcSetting.xib in Resources */ = {isa = PBXBuildFile; fileRef = 63BF05341FD68CD100BA7ED2 /* VcSetting.xib */; };
 		63BF053A1FD69E2000BA7ED2 /* CellSetting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63BF05381FD69E2000BA7ED2 /* CellSetting.swift */; };
 		63BF053B1FD69E2000BA7ED2 /* CellSetting.xib in Resources */ = {isa = PBXBuildFile; fileRef = 63BF05391FD69E2000BA7ED2 /* CellSetting.xib */; };
+		63CF91091FDA3A5A0034A258 /* VcSetPassword.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63CF91071FDA3A5A0034A258 /* VcSetPassword.swift */; };
+		63CF910A1FDA3A5A0034A258 /* VcSetPassword.xib in Resources */ = {isa = PBXBuildFile; fileRef = 63CF91081FDA3A5A0034A258 /* VcSetPassword.xib */; };
 		63E632A71FD114BA0077C625 /* Toast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E632A61FD114B90077C625 /* Toast.swift */; };
 		63FAFFAA1FD4F3EB00C781A3 /* VcRetrospect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63FAFFA81FD4F3EB00C781A3 /* VcRetrospect.swift */; };
 		63FAFFAB1FD4F3EB00C781A3 /* VcRetrospect.xib in Resources */ = {isa = PBXBuildFile; fileRef = 63FAFFA91FD4F3EB00C781A3 /* VcRetrospect.xib */; };
@@ -40,6 +44,8 @@
 		6324339C1FCD4D1800A3BC1A /* VcHome.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VcHome.xib; sourceTree = "<group>"; };
 		632433A71FCD5F2600A3BC1A /* VcIntro.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VcIntro.swift; sourceTree = "<group>"; };
 		632433A81FCD5F2600A3BC1A /* VcIntro.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VcIntro.xib; sourceTree = "<group>"; };
+		6328F5AE1FD9187300CF717A /* VcSetRetrospectTime.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VcSetRetrospectTime.swift; sourceTree = "<group>"; };
+		6328F5AF1FD9187300CF717A /* VcSetRetrospectTime.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VcSetRetrospectTime.xib; sourceTree = "<group>"; };
 		636C6F5B1FCE4823009CD1FA /* SCExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCExtension.swift; sourceTree = "<group>"; };
 		636C6F621FCE9ED2009CD1FA /* VcSignUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VcSignUp.swift; sourceTree = "<group>"; };
 		636C6F631FCE9ED2009CD1FA /* VcSignUp.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VcSignUp.xib; sourceTree = "<group>"; };
@@ -49,6 +55,8 @@
 		63BF05341FD68CD100BA7ED2 /* VcSetting.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VcSetting.xib; sourceTree = "<group>"; };
 		63BF05381FD69E2000BA7ED2 /* CellSetting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellSetting.swift; sourceTree = "<group>"; };
 		63BF05391FD69E2000BA7ED2 /* CellSetting.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CellSetting.xib; sourceTree = "<group>"; };
+		63CF91071FDA3A5A0034A258 /* VcSetPassword.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VcSetPassword.swift; sourceTree = "<group>"; };
+		63CF91081FDA3A5A0034A258 /* VcSetPassword.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VcSetPassword.xib; sourceTree = "<group>"; };
 		63E632A61FD114B90077C625 /* Toast.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Toast.swift; sourceTree = "<group>"; };
 		63FAFFA81FD4F3EB00C781A3 /* VcRetrospect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VcRetrospect.swift; sourceTree = "<group>"; };
 		63FAFFA91FD4F3EB00C781A3 /* VcRetrospect.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VcRetrospect.xib; sourceTree = "<group>"; };
@@ -137,6 +145,15 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		6328F5AD1FD9087600CF717A /* SetRetrospectTime */ = {
+			isa = PBXGroup;
+			children = (
+				6328F5AE1FD9187300CF717A /* VcSetRetrospectTime.swift */,
+				6328F5AF1FD9187300CF717A /* VcSetRetrospectTime.xib */,
+			);
+			path = SetRetrospectTime;
+			sourceTree = "<group>";
+		};
 		636C6F5A1FCE47FE009CD1FA /* SCExtension */ = {
 			isa = PBXGroup;
 			children = (
@@ -148,7 +165,7 @@
 		636C6F5E1FCE9EA8009CD1FA /* Sign */ = {
 			isa = PBXGroup;
 			children = (
-				63E632A81FD12E800077C625 /* Modal */,
+				63E632A81FD12E800077C625 /* Model */,
 				636C6F5F1FCE9EB3009CD1FA /* View */,
 				63E632A91FD12E860077C625 /* Controller */,
 			);
@@ -194,6 +211,8 @@
 		63BF05311FD68CA300BA7ED2 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				6328F5AD1FD9087600CF717A /* SetRetrospectTime */,
+				63CF91061FDA3A460034A258 /* SetPassword */,
 				63BF05321FD68CB100BA7ED2 /* ViewSetting */,
 			);
 			path = View;
@@ -218,6 +237,15 @@
 			path = CellSetting;
 			sourceTree = "<group>";
 		};
+		63CF91061FDA3A460034A258 /* SetPassword */ = {
+			isa = PBXGroup;
+			children = (
+				63CF91071FDA3A5A0034A258 /* VcSetPassword.swift */,
+				63CF91081FDA3A5A0034A258 /* VcSetPassword.xib */,
+			);
+			path = SetPassword;
+			sourceTree = "<group>";
+		};
 		63E632A51FD114A70077C625 /* Library */ = {
 			isa = PBXGroup;
 			children = (
@@ -226,11 +254,11 @@
 			path = Library;
 			sourceTree = "<group>";
 		};
-		63E632A81FD12E800077C625 /* Modal */ = {
+		63E632A81FD12E800077C625 /* Model */ = {
 			isa = PBXGroup;
 			children = (
 			);
-			path = Modal;
+			path = Model;
 			sourceTree = "<group>";
 		};
 		63E632A91FD12E860077C625 /* Controller */ = {
@@ -331,12 +359,14 @@
 				63FAFFAB1FD4F3EB00C781A3 /* VcRetrospect.xib in Resources */,
 				636C6F691FCE9EE8009CD1FA /* VcSignIn.xib in Resources */,
 				632433921FCD4CD600A3BC1A /* LaunchScreen.storyboard in Resources */,
+				6328F5B11FD9187300CF717A /* VcSetRetrospectTime.xib in Resources */,
 				63BF053B1FD69E2000BA7ED2 /* CellSetting.xib in Resources */,
 				632433AA1FCD5F2600A3BC1A /* VcIntro.xib in Resources */,
 				636C6F651FCE9ED2009CD1FA /* VcSignUp.xib in Resources */,
 				63BF05361FD68CD100BA7ED2 /* VcSetting.xib in Resources */,
 				6324339E1FCD4D1800A3BC1A /* VcHome.xib in Resources */,
 				6324338F1FCD4CD600A3BC1A /* Assets.xcassets in Resources */,
+				63CF910A1FDA3A5A0034A258 /* VcSetPassword.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -410,6 +440,8 @@
 				6324339D1FCD4D1800A3BC1A /* VcHome.swift in Sources */,
 				63BF05351FD68CD100BA7ED2 /* VcSetting.swift in Sources */,
 				63BF053A1FD69E2000BA7ED2 /* CellSetting.swift in Sources */,
+				6328F5B01FD9187300CF717A /* VcSetRetrospectTime.swift in Sources */,
+				63CF91091FDA3A5A0034A258 /* VcSetPassword.swift in Sources */,
 				636C6F641FCE9ED2009CD1FA /* VcSignUp.swift in Sources */,
 				632433A91FCD5F2600A3BC1A /* VcIntro.swift in Sources */,
 				636C6F681FCE9EE7009CD1FA /* VcSignIn.swift in Sources */,

@@ -14,8 +14,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        
-        
+                
         initDefalutOption()       
         
         let navigat = UINavigationController()
@@ -51,10 +50,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             defaults.set("no", forKey: "isSign")
             defaults.synchronize()
         }
-        
-        
     }
-    
     
 }
 
