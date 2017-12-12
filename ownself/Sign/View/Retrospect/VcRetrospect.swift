@@ -15,6 +15,8 @@ class VcRetrospect: UIViewController {
     @IBOutlet weak var scGuidePage: UIScrollView!
     @IBOutlet weak var scPageControl: SCPageControlView!
     @IBOutlet weak var dtRetrospect: UIDatePicker!
+    @IBOutlet weak var ivBottom: UIImageView!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,6 +29,7 @@ class VcRetrospect: UIViewController {
     
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
+        initAutolayout()
     }
 
     //MARK: ## init Method ##
@@ -36,6 +39,10 @@ class VcRetrospect: UIViewController {
         scPageControl.frame = CGRect(x: 0, y: screenHeight-50, width: screenWidth, height: 50)
         scPageControl.scp_style = .SCNormal
         scPageControl.set_view(3, current: 0, tint_color: .red)
+    }
+    
+    func initAutolayout() { // init Autolayout
+        
     }
     
     //MARK: ## Button Method ##
@@ -51,12 +58,13 @@ extension VcRetrospect: UIScrollViewDelegate {
     
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
         
-        if scrollView.contentOffset.x > 750 {
+        if scrollView.contentOffset.x >= screenWidth*2.0 {
             scPageControl.isHidden = true
+            ivBottom.isHidden = false
         } else {
             scPageControl.isHidden = false
+            ivBottom.isHidden = true
         }
-        
         scPageControl.scroll_did(scGuidePage)
     }
     

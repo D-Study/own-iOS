@@ -13,6 +13,8 @@ class VcSetting: UIViewController {
     @IBOutlet weak var tbSetting: UITableView!
     @IBOutlet weak var contNaviHeight: NSLayoutConstraint!
     
+    let arrMenuTitle: [String] = ["회고시간 지정하기", "비밀번호 변경하기", "테마 색 지정하기", "테마 폰트 변경하기"]
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         initNormal()
@@ -49,28 +51,33 @@ class VcSetting: UIViewController {
 extension VcSetting: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int { //갯수
-        return 5
+        return arrMenuTitle.count
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat { //높이
-        return 45
+        return 50
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {  //셀 셋팅
-        
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! CellSetting
-        
-        cell.textLabel?.text = "a"
-        
+        cell.lbMenuTitle.text = arrMenuTitle[indexPath.row]
         cell.selectionStyle = .none
         return cell
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) { //셀선택시
+        
+        switch arrMenuTitle[indexPath.row] {
+        case "회고시간 지정하기": // Setting Retrospect Time
+            self.navigationController?.pushViewController(VcSetRetrospectTime(), animated: true)
+        case "비밀번호 변경하기": // Change Password
+            self.navigationController?.pushViewController(VcSetPassword(), animated: true)
+        default: break
+        }
+        
+        
         tableView.deselectRow(at: indexPath, animated: true)
     }
-
-    
     
     
 }

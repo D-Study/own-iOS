@@ -18,6 +18,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="VcRetrospect" customModule="ownself" customModuleProvider="target">
             <connections>
                 <outlet property="dtRetrospect" destination="v5h-KL-xAt" id="QHA-TR-937"/>
+                <outlet property="ivBottom" destination="gks-RT-oXt" id="btq-60-BAN"/>
                 <outlet property="scGuidePage" destination="NwT-8K-yd2" id="YHB-gj-tsb"/>
                 <outlet property="scPageControl" destination="PZP-2O-Opw" id="BkH-3D-rJa"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
@@ -61,7 +62,7 @@
                             <rect key="frame" x="750" y="0.0" width="375" height="667"/>
                             <subviews>
                                 <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="time" minuteInterval="1" useCurrentDate="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v5h-KL-xAt">
-                                    <rect key="frame" x="0.0" y="150" width="375" height="162"/>
+                                    <rect key="frame" x="0.0" y="152.5" width="375" height="162"/>
                                     <constraints>
                                         <constraint firstAttribute="height" constant="162" id="sXC-AO-UPS"/>
                                     </constraints>
@@ -71,7 +72,7 @@
                                     <locale key="locale" localeIdentifier="ko_KR"/>
                                 </datePicker>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="스케줄에 대한 회고를 할 수 있는 시간입니다. 언제든지 옵션에서 변경 할 수 있습니다." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BBI-Bx-svJ">
-                                    <rect key="frame" x="15" y="327" width="345" height="31"/>
+                                    <rect key="frame" x="15" y="329.5" width="345" height="31"/>
                                     <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="13"/>
                                     <nil key="textColor"/>
                                     <nil key="highlightedColor"/>
@@ -80,7 +81,7 @@
                             <color key="backgroundColor" red="0.65490196079999996" green="0.83921568629999999" blue="0.50196078430000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <constraints>
                                 <constraint firstItem="v5h-KL-xAt" firstAttribute="leading" secondItem="oui-rE-H1l" secondAttribute="leading" id="9Xu-gp-l9j"/>
-                                <constraint firstItem="v5h-KL-xAt" firstAttribute="top" secondItem="oui-rE-H1l" secondAttribute="top" constant="150" id="Tjn-sF-Z81"/>
+                                <constraint firstItem="v5h-KL-xAt" firstAttribute="centerY" secondItem="oui-rE-H1l" secondAttribute="centerY" constant="-100" id="Uez-RF-hXP"/>
                                 <constraint firstAttribute="trailing" secondItem="BBI-Bx-svJ" secondAttribute="trailing" constant="15" id="Z9G-6i-U24"/>
                                 <constraint firstAttribute="trailing" secondItem="v5h-KL-xAt" secondAttribute="trailing" id="b2v-SB-Z0J"/>
                                 <constraint firstItem="BBI-Bx-svJ" firstAttribute="top" secondItem="v5h-KL-xAt" secondAttribute="bottom" constant="15" id="elR-ti-mRG"/>
@@ -110,6 +111,13 @@
                         <outlet property="delegate" destination="-1" id="Txq-SX-Zp2"/>
                     </connections>
                 </scrollView>
+                <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="gks-RT-oXt">
+                    <rect key="frame" x="0.0" y="617" width="375" height="90"/>
+                    <color key="backgroundColor" red="0.87843137250000003" green="0.23921568630000001" blue="0.19215686269999999" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="90" id="uPj-p7-bLW"/>
+                    </constraints>
+                </imageView>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SIE-gM-RAa">
                     <rect key="frame" x="0.0" y="617" width="375" height="50"/>
                     <color key="backgroundColor" red="0.87843137250000003" green="0.23921568630000001" blue="0.19215686269999999" alpha="1" colorSpace="calibratedRGB"/>
@@ -137,14 +145,17 @@
                 <constraint firstItem="NwT-8K-yd2" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" id="QAp-Oc-DJT"/>
                 <constraint firstItem="SIE-gM-RAa" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="X2u-tJ-g7u"/>
                 <constraint firstItem="PZP-2O-Opw" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="X3L-8e-jPi"/>
+                <constraint firstItem="gks-RT-oXt" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="bvi-er-H8F"/>
+                <constraint firstItem="gks-RT-oXt" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="d3r-3O-PLb"/>
                 <constraint firstItem="NwT-8K-yd2" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="jbE-hD-kFe"/>
                 <constraint firstItem="PZP-2O-Opw" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="pgR-W2-IO5"/>
                 <constraint firstItem="SIE-gM-RAa" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" id="vQR-9z-9ng"/>
                 <constraint firstItem="NwT-8K-yd2" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="x6u-1h-sL8"/>
+                <constraint firstItem="gks-RT-oXt" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" constant="40" id="xDJ-BS-KgM"/>
                 <constraint firstItem="SIE-gM-RAa" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="xpS-2R-LSh"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
-            <point key="canvasLocation" x="-566" y="-434"/>
+            <point key="canvasLocation" x="-3146" y="-496"/>
         </view>
     </objects>
 </document>

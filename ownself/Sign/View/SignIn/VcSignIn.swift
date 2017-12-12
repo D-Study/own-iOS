@@ -9,11 +9,13 @@
 import UIKit
 
 class VcSignIn: UIViewController {
-
    
     @IBOutlet weak var btnStartOwnSelf: UIButton!
     @IBOutlet weak var tfEmail: UITextField!
+    @IBOutlet weak var tfPassword: UITextField!
     @IBOutlet weak var lbDesStatus: UILabel!
+    
+    var isCheck: (isEmail: Bool, isPass: Bool) = (false, false)
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -33,6 +35,9 @@ class VcSignIn: UIViewController {
     func initAutolayoutView() { //init Autolayout View
         tfEmail.layer.addBorder([.bottom], color: UIColor.color_one(161.0), thickness: 0.5)
         tfEmail.setBothSidePaddingPoints(10.0)
+        
+        tfPassword.layer.addBorder([.bottom], color: UIColor.color_one(161.0), thickness: 0.5)
+        tfPassword.setBothSidePaddingPoints(10.0)
         
         btnStartOwnSelf.layer.cornerRadius = 4.0
     }
@@ -56,7 +61,6 @@ class VcSignIn: UIViewController {
         }
         // need Server communication        
         self.present(VcRetrospect(), animated: true, completion: nil)
-        
     }
     
     //MARK: ## TextField Method ##
@@ -64,15 +68,33 @@ class VcSignIn: UIViewController {
         guard let email: String = sender.text, email.count != 0 else {
             return
         }
-        if email.isValidEmail {
+        isCheck.isEmail = email.isValidEmail
+        checkEmailAndPassword()
+    }
+    
+    @IBAction func tfPasswordT(_ sender: UITextField) { // Password check
+        guard let pass: String = sender.text, pass.count != 0 else {
+            return
+        }
+        isCheck.isPass = pass.count > 5 ? true : false
+        checkEmailAndPassword()
+    }
+
+    //MARK: ## Etc Method ##
+    func checkEmailAndPassword() { // Email and password check, login button is enable when both true
+        if isCheck.isEmail && isCheck.isPass {
             lbDesStatus.text = ""
             btnStartOwnSelf.isUserInteractionEnabled = true
             btnStartOwnSelf.backgroundColor = UIColor(red: 0.0/255.0, green: 172.0/255.0, blue: 193.0, alpha: 1.0)
         } else {
-            lbDesStatus.text = "* 올바른 형식의 이메일을 적어주세요."
+            if !isCheck.isEmail {
+                lbDesStatus.text = "* 올바른 형식의 이메일을 적어주세요."
+            } else if !isCheck.isPass {
+                lbDesStatus.text = "* 패스워드는 6글자이상 입니다."
+            }
             btnStartOwnSelf.isUserInteractionEnabled = false
             btnStartOwnSelf.backgroundColor = UIColor.color_one(161.0)
         }
-        
     }
+    
 }
