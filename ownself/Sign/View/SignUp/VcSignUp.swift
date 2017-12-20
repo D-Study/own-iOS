@@ -95,7 +95,5 @@ class VcSignUp: UIViewController {
             btnSignUp.isUserInteractionEnabled = false
             btnSignUp.backgroundColor = UIColor.color_one(161.0)
         }
-    }
-    
-    
+    }    
 }

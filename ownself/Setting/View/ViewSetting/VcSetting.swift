@@ -50,15 +50,15 @@ class VcSetting: UIViewController {
 //MARK: ## UITableview delegate and datasource ##
 extension VcSetting: UITableViewDelegate, UITableViewDataSource {
     
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int { //갯수
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int { // Cell Count
         return arrMenuTitle.count
     }
     
-    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat { //높이
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat { // Cell Height
         return 50
     }
     
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {  //셀 셋팅
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {  // Cell Setting
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! CellSetting
         cell.lbMenuTitle.text = arrMenuTitle[indexPath.row]
         cell.selectionStyle = .none
@@ -66,18 +66,18 @@ extension VcSetting: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) { //셀선택시
-        
         switch arrMenuTitle[indexPath.row] {
         case "회고시간 지정하기": // Setting Retrospect Time
             self.navigationController?.pushViewController(VcSetRetrospectTime(), animated: true)
         case "비밀번호 변경하기": // Change Password
             self.navigationController?.pushViewController(VcSetPassword(), animated: true)
+        case "테마 색 지정하기": // Change Theme color
+            self.navigationController?.pushViewController(VcSetThemeColor(), animated: true)
+        case "테마 폰트 변경하기": // Chagne Theme font
+            self.navigationController?.pushViewController(VcSetThemeFont(), animated: true)
         default: break
         }
-        
-        
         tableView.deselectRow(at: indexPath, animated: true)
     }
-    
     
 }
